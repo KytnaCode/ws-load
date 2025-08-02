@@ -20,6 +20,8 @@
         buildInputs = with pkgs; [
           git
 
+          self.packages.${system}.default
+
           # Go packages
           cobra-cli
           go
